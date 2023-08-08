@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="session-02_files/libs/clipboard/clipboard.min.js"></script>
-<script src="session-02_files/libs/quarto-html/tabby.min.js"></script>
-<script src="session-02_files/libs/quarto-html/popper.min.js"></script>
-<script src="session-02_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="session-02_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="session-02_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="session-02_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="session-03_files/libs/clipboard/clipboard.min.js"></script>
+<script src="session-03_files/libs/quarto-html/tabby.min.js"></script>
+<script src="session-03_files/libs/quarto-html/popper.min.js"></script>
+<script src="session-03_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="session-03_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="session-03_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="session-03_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.2.313">
 
   <meta name="author" content="Roger Beecham // August 2023">
@@ -14,8 +14,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="session-02_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="session-02_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="session-03_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="session-03_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -28,76 +28,12 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      { color: #003b4f; background-color: #f1f3f5; }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #003b4f; } /* Normal */
-    code span.al { color: #ad0000; } /* Alert */
-    code span.an { color: #5e5e5e; } /* Annotation */
-    code span.at { color: #657422; } /* Attribute */
-    code span.bn { color: #ad0000; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; } /* ControlFlow */
-    code span.ch { color: #20794d; } /* Char */
-    code span.cn { color: #8f5902; } /* Constant */
-    code span.co { color: #5e5e5e; } /* Comment */
-    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-    code span.dt { color: #ad0000; } /* DataType */
-    code span.dv { color: #ad0000; } /* DecVal */
-    code span.er { color: #ad0000; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #ad0000; } /* Float */
-    code span.fu { color: #4758ab; } /* Function */
-    code span.im { color: #00769e; } /* Import */
-    code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; } /* Keyword */
-    code span.op { color: #5e5e5e; } /* Operator */
-    code span.ot { color: #003b4f; } /* Other */
-    code span.pp { color: #ad0000; } /* Preprocessor */
-    code span.sc { color: #5e5e5e; } /* SpecialChar */
-    code span.ss { color: #20794d; } /* SpecialString */
-    code span.st { color: #20794d; } /* String */
-    code span.va { color: #111111; } /* Variable */
-    code span.vs { color: #20794d; } /* VerbatimString */
-    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="session-02_files/libs/revealjs/dist/theme/quarto.css" id="theme">
-  <link href="session-02_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="session-02_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="session-02_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="session-02_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="session-03_files/libs/revealjs/dist/theme/quarto.css" id="theme">
+  <link href="session-03_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="session-03_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="session-03_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="session-03_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -382,9 +318,6 @@
       margin-right: 0; 
     }
   </style>
-  
-  <script src="session-02_files/libs/kePrint-0.0.1/kePrint.js"></script>
-  <link href="session-02_files/libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -405,22 +338,16 @@
 </section>
 <section class="slide level2">
 
+<script defer="" src="/fontawesome.min.js"></script>
 <div class="cell">
 
 </div>
 </section>
 <section>
-<section id="session-2-data-fundamentals" class="title-slide slide level1 center">
-<h1>Session 2 : Data Fundamentals</h1>
+<section id="session-3-visualization-fundamentals" class="title-slide slide level1 center">
+<h1>Session 3 : Visualization Fundamentals</h1>
 <aside class="notes">
-<p>Review objectives –</p>
-<ul>
-<li><p>vocab important – determines the operations that we can perform.</p></li>
-<li><p>vocab important sds – new data, work out its structure.</p></li>
-<li><p>tidyverse – end up coming up with analysis templates</p></li>
-<li><p>bikedata and citibike – loading data for the first time; exploring usefulness for cycling research – show data</p></li>
-<li><p>short on conceptual; large on technical</p></li>
-</ul>
+<p>Objectives | Datasets – Contituency-level Leave voting</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -433,30 +360,14 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="data-structure" class="slide level2">
-<h2>Data structure</h2>
-</section>
-<section class="slide level2">
-
-<h3 id="data-frame">Data frame</h3>
-<p><br></p>
-<div class="column" style="width:100%;">
-<div class="quarto-figure quarto-figure-left">
-<figure>
-<p><img data-src="img/data-structure.png"></p>
-</figure>
-</div>
+<section id="introducing-fundamentals" class="slide level2">
+<h2>Introducing Fundamentals</h2>
+<div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Sua0xDCf8MA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
 </div>
 <aside class="notes">
-<p>spreadsheet like representations:</p>
-<ul>
-<li><p>rows are observations (case/record)</p></li>
-<li><p>columns are variables</p></li>
-<li><p>organising not always easy – Tidy</p></li>
-<li><p>Each variable (column) in a data frame is a vector that must be of equal length</p></li>
-<li><p>Missing - <code>NA</code></p></li>
-<li><p><code>list-col</code></p></li>
-</ul>
+<p>Fundamentals : * position on what vis is and should do * processes of creating and evaluating data graphics * vocabulary for this * using 2019 General Election</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -469,215 +380,61 @@
           display:block!important;
       }</style></aside>
 </section>
-<section class="slide level2">
-
-<h3 id="stevens-levels-of-measurement">Stevens levels of measurement</h3>
-<p><br></p>
-<div class="cell">
-<div class="cell-output-display">
-<div id="tbl-variable-types">
-
-<table class="table" style="font-size: 20px; margin-left: auto; margin-right: auto;"><caption>Table&nbsp;1:  Breakdown of variable types and corresponding mathematical operations. </caption>
- <thead>
-  <tr>
-   <th style="text-align:left;border-bottom: 1px solid;"> Measurement </th>
-   <th style="text-align:left;border-bottom: 1px solid;"> Example </th>
-   <th style="text-align:left;border-bottom: 1px solid;"> Operators </th>
-   <th style="text-align:left;border-bottom: 1px solid;"> Midpoint </th>
-   <th style="text-align:left;border-bottom: 1px solid;"> Spread </th>
-  </tr>
- </thead>
-<tbody>
-  <tr grouplength="2"><td colspan="5" style="border-bottom: 0px solid;">Categories</td></tr>
-<tr>
-   <td style="text-align:left;padding-left: 2em;width: 8em; font-family:  Monospace" indentlevel="1"> Nominal </td>
-   <td style="text-align:left;"> Political parties; street names </td>
-   <td style="text-align:left;width: 8em; font-family:  Monospace"> =  ≠ </td>
-   <td style="text-align:left;"> mode </td>
-   <td style="text-align:left;"> entropy </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;padding-left: 2em;width: 8em; font-family:  Monospace" indentlevel="1"> Ordinal </td>
-   <td style="text-align:left;"> Terrorism threat levels </td>
-   <td style="text-align:left;width: 8em; font-family:  Monospace"> =  ≠  </td>
-   <td style="text-align:left;"> median </td>
-   <td style="text-align:left;"> percentile </td>
-  </tr>
-  <tr grouplength="2"><td colspan="5" style="border-bottom: 0px solid;">Measures</td></tr>
-<tr>
-   <td style="text-align:left;padding-left: 2em;width: 8em; font-family:  Monospace" indentlevel="1"> Interval </td>
-   <td style="text-align:left;"> Temperatures; years </td>
-   <td style="text-align:left;width: 8em; font-family:  Monospace"> =  ≠  +  - </td>
-   <td style="text-align:left;"> mean </td>
-   <td style="text-align:left;"> variance </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;padding-left: 2em;width: 8em; font-family:  Monospace" indentlevel="1"> Ratio </td>
-   <td style="text-align:left;"> Distances; prices </td>
-   <td style="text-align:left;width: 8em; font-family:  Monospace"> =  ≠  +  - | × ÷ </td>
-   <td style="text-align:left;"> mean </td>
-   <td style="text-align:left;"> variance </td>
-  </tr>
-</tbody>
-</table>
-
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-<h3 id="r-data-types">R data types</h3>
-<p><br></p>
-<div class="cell">
-<div class="cell-output-display">
-<div id="tbl-data-types">
-
-<table class="table" style="font-size: 22px; margin-left: auto; margin-right: auto;"><caption>Table&nbsp;2:  A breakdown of data types in R. </caption>
- <thead>
-  <tr>
-   <th style="text-align:left;border-bottom: 1px solid;"> Type </th>
-   <th style="text-align:left;border-bottom: 1px solid;"> Description </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td style="text-align:left;width: 8em; font-family:  Monospace"> lgl </td>
-   <td style="text-align:left;"> Logical -- vectors that can contain only `TRUE` or `FALSE` values </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;width: 8em; font-family:  Monospace"> int </td>
-   <td style="text-align:left;"> Integers -- whole numbers </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;width: 8em; font-family:  Monospace"> dbl </td>
-   <td style="text-align:left;"> Double --  real numbers with decimals </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;width: 8em; font-family:  Monospace"> chr </td>
-   <td style="text-align:left;"> Character -- text strings </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;width: 8em; font-family:  Monospace"> dttm </td>
-   <td style="text-align:left;"> Date-times -- a date + a time </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;width: 8em; font-family:  Monospace"> fctr </td>
-   <td style="text-align:left;"> Factors -- represent categorical variables of fixed and potentially orderable values </td>
-  </tr>
-</tbody>
-</table>
-
-</div>
-</div>
-</div>
-</section>
-<section id="applying-stevens-levels-of-measurement" class="slide level2">
-<h2>Applying Stevens levels of measurement</h2>
-</section>
-<section class="slide level2">
-
-<div style="font-size:0.7em;">
+<section id="effective-data-graphics" class="slide level2">
+<h2>Effective data graphics</h2>
+<div style="font-size:0.8em;">
+<div class="fragment">
 <ul>
-<li>dataset: <a href="https://www.citibikenyc.com/system-data">Citibike OD trip data</a></li>
-<li>variables: <code>trip_distance</code> | <code>user_type</code></li>
-<li>measurement: <code>ratio</code> | <code>nominal</code></li>
+<li>Represent <strong>complex datasets</strong> graphically to <strong>expose structure, connections and comparisons</strong> that could not be achieved easily via other means.</li>
 </ul>
 </div>
 <div class="fragment">
-<div class="cell">
-<div class="cell-output-display">
-<p><img data-src="img/dist.png" style="width:90.0%"></p>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-<div style="font-size:0.7em;">
-
 <ul>
-<li>dataset: Citibike OD trip data</li>
-<li>variable: <code>trip_speed</code> | <code>user_age_band</code> | <code>user_type</code> | <code>trip_distance</code></li>
-<li>measurement: <code>ratio</code> | <code>ordinal</code> | <code>nominal</code> | <code>ordinal</code></li>
-</ul>
-<div class="fragment">
-<div class="cell">
-<div class="cell-output-display">
-<p><img data-src="img/speeds.png" style="width:80.0%"></p>
-</div>
-</div>
-</div>
-</div></section>
-<section class="slide level2">
-
-<div style="font-size:0.7em;">
-<ul>
-<li>dataset: Citibike OD trip data  <br></li>
-<li>variable: <code>trip_count</code> | <code>hod</code> | <code>user_type</code> | <code>day_week</code></li>
-<li>measurement: <code>ratio</code> | <code>interval|cyclic ratio</code> | <code>nominal</code> | <code>ordinal</code></li>
+<li>Are data rich: present <strong>many numbers in a small space</strong>.</li>
 </ul>
 </div>
 <div class="fragment">
-<div class="cell">
-<div class="cell-output-display">
-<p><img data-src="img/hod_dow.png" style="width:80.0%"></p>
-</div>
-</div>
-</div>
-</section>
-<section id="tidy-data" class="slide level2">
-<h2>Tidy data</h2>
-</section>
-<section class="slide level2">
-
-<div class="column" style="width:70%;">
-<div class="quarto-figure quarto-figure-left">
-<figure>
-<p><img data-src="img/data3.png"></p>
-</figure>
-</div>
+<ul>
+<li>Reveal <strong>patterns</strong> at <strong>several levels of detail</strong>: from broad overview to fine structure.</li>
+</ul>
 </div>
 <div class="fragment">
-<div class="cell">
-<div class="cell-output-display">
-
-<table class="table" style="font-size: 24px; margin-left: auto; margin-right: auto;"><caption>Is this tidy?</caption>
- <thead>
-  <tr>
-   <th style="text-align:left;border-bottom: 1px solid;"> treatment </th>
-   <th style="text-align:left;border-bottom: 1px solid;"> John Smith </th>
-   <th style="text-align:left;border-bottom: 1px solid;"> Jane Doe </th>
-   <th style="text-align:left;border-bottom: 1px solid;"> Mary Johnson </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td style="text-align:left;"> treatment_a </td>
-   <td style="text-align:left;"> -- </td>
-   <td style="text-align:left;"> 16 </td>
-   <td style="text-align:left;"> 3 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> treatment_b </td>
-   <td style="text-align:left;"> 2 </td>
-   <td style="text-align:left;"> 11 </td>
-   <td style="text-align:left;"> 1 </td>
-  </tr>
-</tbody>
-</table>
-
+<ul>
+<li>Have elegance : emphasise dimensions of a dataset <strong>without extraneous detail</strong>.</li>
+</ul>
 </div>
+<div class="fragment">
+<ul>
+<li>Generate an <strong>aesthetic response</strong> that encourages people to <strong>engage</strong> with the data or question.</li>
+</ul>
 </div>
 </div>
 <aside class="notes">
-<p>identify the <strong>variables</strong> and their <strong>values</strong>:</p>
-<ol type="1">
-<li><code>person</code>: a categorical nominal variable which takes three values: John Smith, Jane Doe, Mary Johnson.</li>
-<li><code>treatment</code>: a categorical nominal variable which takes values: a and b.</li>
-<li><code>result</code>: a measurement ratio (I think) variable which six recorded values (including the missing value)</li>
-</ol>
-<p>Each <strong>observation</strong> is then a test result returned for each combination of <code>person</code> and <code>treatment</code>.</p>
+<p>Data vis is a varied field but effective data graphics have …</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="effective-data-graphics-1" class="slide level2">
+<h2>Effective data graphics</h2>
+<p><br></p>
+<div class="fragment">
+<blockquote>
+<p>Data graphics visually display measured quantities by means of the <strong>combined use of points, lines, a coordinate system, numbers, symbols, words, shading, and color</strong>.</p>
+<p>Tufte 1983</p>
+</blockquote>
+</div>
+<aside class="notes">
+<p>Data vis is a careful thinking through of data you have – its type – how it ican be represented using the visual system – and to support particular analysis tasks.</p>
+<p>Data - Visuals – Tasks</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -692,419 +449,126 @@
 </section>
 <section class="slide level2">
 
-<div class="column" style="width:70%;">
-<div class="quarto-figure quarto-figure-left">
-<figure>
-<p><img data-src="img/data3.png"></p>
-</figure>
-</div>
-</div>
-<div class="fragment">
-<div class="cell">
-<div class="cell-output-display">
-
-<table class="table" style="font-size: 24px; margin-left: auto; margin-right: auto;"><caption>Is this tidy?</caption>
- <thead>
-  <tr>
-   <th style="text-align:left;border-bottom: 1px solid;"> person </th>
-   <th style="text-align:left;border-bottom: 1px solid;"> treatment </th>
-   <th style="text-align:left;border-bottom: 1px solid;"> result </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td style="text-align:left;"> John Smith </td>
-   <td style="text-align:left;"> a </td>
-   <td style="text-align:left;"> -- </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> John Smith </td>
-   <td style="text-align:left;"> b </td>
-   <td style="text-align:left;"> 2 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Jane Doe </td>
-   <td style="text-align:left;"> a </td>
-   <td style="text-align:left;"> 16 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Jane Doe </td>
-   <td style="text-align:left;"> b </td>
-   <td style="text-align:left;"> 11 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Mary Johnson </td>
-   <td style="text-align:left;"> a </td>
-   <td style="text-align:left;"> 3 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Mary Johnson </td>
-   <td style="text-align:left;"> b </td>
-   <td style="text-align:left;"> 1 </td>
-  </tr>
-</tbody>
-</table>
-
-</div>
-</div>
-</div>
-<aside class="notes">
-<p>identify the <strong>variables</strong> and their <strong>values</strong>:</p>
-<ol type="1">
-<li><code>person</code>: a categorical nominal variable which takes three values: John Smith, Jane Doe, Mary Johnson.</li>
-<li><code>treatment</code>: a categorical nominal variable which takes values: a and b.</li>
-<li><code>result</code>: a measurement ratio (I think) variable which six recorded values (including the missing value)</li>
-</ol>
-<p>Each <strong>observation</strong> is then a test result returned for each combination of <code>person</code> and <code>treatment</code>.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section class="slide level2">
-
-<div class="column" style="width:70%;">
-<div class="quarto-figure quarto-figure-left">
-<figure>
-<p><img data-src="img/data3.png"></p>
-</figure>
-</div>
-</div>
-<div class="fragment">
-<div class="cell">
-<div class="cell-output-display">
-
-<table class="table" style="font-size: 24px; margin-left: auto; margin-right: auto;"><caption>Is this tidy?</caption>
- <thead>
-  <tr>
-   <th style="text-align:left;border-bottom: 1px solid;"> country </th>
-   <th style="text-align:left;border-bottom: 1px solid;"> year </th>
-   <th style="text-align:left;border-bottom: 1px solid;"> f_cases </th>
-   <th style="text-align:left;border-bottom: 1px solid;"> m_cases </th>
-   <th style="text-align:left;border-bottom: 1px solid;"> f_population </th>
-   <th style="text-align:left;border-bottom: 1px solid;"> m_population </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td style="text-align:left;"> Afghanistan </td>
-   <td style="text-align:left;"> 1999 </td>
-   <td style="text-align:left;"> 447 </td>
-   <td style="text-align:left;"> 298 </td>
-   <td style="text-align:left;"> 9993400 </td>
-   <td style="text-align:left;"> 9993671 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Afghanistan </td>
-   <td style="text-align:left;"> 2000 </td>
-   <td style="text-align:left;"> 1599 </td>
-   <td style="text-align:left;"> 1067 </td>
-   <td style="text-align:left;"> 10296280 </td>
-   <td style="text-align:left;"> 10299080 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Brazil </td>
-   <td style="text-align:left;"> 1999 </td>
-   <td style="text-align:left;"> 16982 </td>
-   <td style="text-align:left;"> 20755 </td>
-   <td style="text-align:left;"> 86001181 </td>
-   <td style="text-align:left;"> 86005181 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Brazil </td>
-   <td style="text-align:left;"> 2000 </td>
-   <td style="text-align:left;"> 39440 </td>
-   <td style="text-align:left;"> 41048 </td>
-   <td style="text-align:left;"> 87251329 </td>
-   <td style="text-align:left;"> 87253569 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> China </td>
-   <td style="text-align:left;"> 1999 </td>
-   <td style="text-align:left;"> 104007 </td>
-   <td style="text-align:left;"> 108252 </td>
-   <td style="text-align:left;"> 636451250 </td>
-   <td style="text-align:left;"> 636464022 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> China </td>
-   <td style="text-align:left;"> 2000 </td>
-   <td style="text-align:left;"> 104746 </td>
-   <td style="text-align:left;"> 109759 </td>
-   <td style="text-align:left;"> 640212600 </td>
-   <td style="text-align:left;"> 640215983 </td>
-  </tr>
-</tbody>
-</table>
-
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-<div class="column" style="width:70%;">
-<div class="quarto-figure quarto-figure-left">
-<figure>
-<p><img data-src="img/data3.png"></p>
-</figure>
-</div>
-</div>
-<div class="fragment">
-<div class="cell">
-<div class="cell-output-display">
-
-<table class="table" style="font-size: 24px; margin-left: auto; margin-right: auto;"><caption>Is this tidy?</caption>
- <thead>
-  <tr>
-   <th style="text-align:left;border-bottom: 1px solid;"> country </th>
-   <th style="text-align:left;border-bottom: 1px solid;"> year </th>
-   <th style="text-align:left;border-bottom: 1px solid;"> cases </th>
-   <th style="text-align:left;border-bottom: 1px solid;"> population </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td style="text-align:left;"> Afghanistan </td>
-   <td style="text-align:left;"> 1999 </td>
-   <td style="text-align:left;"> 745 </td>
-   <td style="text-align:left;"> 19987071 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Afghanistan </td>
-   <td style="text-align:left;"> 2000 </td>
-   <td style="text-align:left;"> 2666 </td>
-   <td style="text-align:left;"> 20595360 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Brazil </td>
-   <td style="text-align:left;"> 1999 </td>
-   <td style="text-align:left;"> 37737 </td>
-   <td style="text-align:left;"> 172006362 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Brazil </td>
-   <td style="text-align:left;"> 2000 </td>
-   <td style="text-align:left;"> 80488 </td>
-   <td style="text-align:left;"> 174504898 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> China </td>
-   <td style="text-align:left;"> 1999 </td>
-   <td style="text-align:left;"> 212258 </td>
-   <td style="text-align:left;"> 1272915272 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> China </td>
-   <td style="text-align:left;"> 2000 </td>
-   <td style="text-align:left;"> 213766 </td>
-   <td style="text-align:left;"> 1280428583 </td>
-  </tr>
-</tbody>
-</table>
-
-</div>
-</div>
-</div>
-</section>
-<section id="tidy-data-and-dplyr" class="slide level2">
-<h2>Tidy data and <code>dplyr</code></h2>
-</section>
-<section class="slide level2">
-
-<div class="column" style="width:90%;">
-<div class="quarto-figure quarto-figure-left">
-<figure>
-<p><img data-src="img/transform1.png"></p>
-</figure>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-<h3 id="dplyrs-grammar-of-data-manipulation"><code>dplyr</code>’s grammar of data manipulation</h3>
-<p><br></p>
-<div class="cell">
-<div class="cell-output-display">
-<div id="tbl-dplyr-verbs">
-
-<table class="table" style="font-size: 24px; margin-left: auto; margin-right: auto;"><caption>Table&nbsp;3:  dplyr funcitions (verbs) for manipulating data frames. </caption>
- <thead>
-  <tr>
-   <th style="text-align:left;border-bottom: 1px solid;"> function() </th>
-   <th style="text-align:left;border-bottom: 1px solid;"> Description </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td style="text-align:left;font-family:  Monospace"> filter() </td>
-   <td style="text-align:left;"> Picks rows (observations) if their values match a specified criteria </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;font-family:  Monospace"> arrange() </td>
-   <td style="text-align:left;"> Reorders rows (observations) based on their values </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;font-family:  Monospace"> select() </td>
-   <td style="text-align:left;"> Picks a subset of columns (variables) by name (or name characteristics) </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;font-family:  Monospace"> rename() </td>
-   <td style="text-align:left;"> Changes the name of columns in the data frame </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;font-family:  Monospace"> mutate() </td>
-   <td style="text-align:left;"> Adds new columns </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;font-family:  Monospace"> group_by() </td>
-   <td style="text-align:left;"> Chunks the dataset into groups for grouped operations </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;font-family:  Monospace"> summarise() </td>
-   <td style="text-align:left;"> Calculates single-row (non-grouped) or multiple-row (if grouped) summary values </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;font-family:  Monospace"> ... </td>
-   <td style="text-align:left;">  </td>
-  </tr>
-</tbody>
-</table>
-
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-<h3 id="dplyrs-grammar-of-data-manipulation-1"><code>dplyr</code>’s grammar of data manipulation</h3>
 <div class="columns">
-<div class="column" style="width:50%;">
-<br>
-<div style="font-size:0.7em;">
-<ol type="1">
-<li>Start with a data frame</li>
-<li>Pass some arguments to the function which control what you do to the data frame.<br>
-</li>
-<li>Return the updated data frame.</li>
-</ol>
+<div class="column" style="width:65%;">
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="img/wp_spoke.png" style="width:100.0%"></p>
 </div>
-</div><div class="column" style="width:50%;">
+</div>
+</div><div class="column" style="width:35%;">
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="img/wp_long.png" style="width:100.0%"></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="grammar-of-graphics" class="slide level2">
+<h2>Grammar of Graphics</h2>
 <p><br></p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">count</span>(</span>
-<span id="cb1-2"><a href="#cb1-2"></a>  <span class="at">data=</span>ny_trips,</span>
-<span id="cb1-3"><a href="#cb1-3"></a>  gender,</span>
-<span id="cb1-4"><a href="#cb1-4"></a>  <span class="at">sort=</span><span class="cn">TRUE</span></span>
-<span id="cb1-5"><a href="#cb1-5"></a>  )</span>
-<span id="cb1-6"><a href="#cb1-6"></a><span class="co">#    gender       n</span></span>
-<span id="cb1-7"><a href="#cb1-7"></a><span class="co"># 1    male 1044621</span></span>
-<span id="cb1-8"><a href="#cb1-8"></a><span class="co"># 2  female  586361</span></span>
-<span id="cb1-9"><a href="#cb1-9"></a><span class="co"># 3 unknown  251291</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell">
+
+<img data-src="img/gog.png" style="width:80.0%" class="r-stretch"><aside class="notes">
+<p>Already you will notice that I am describing graphics in a consistent way.</p>
+<p>There are advantages of doing this.</p>
+<p>GoG – written by Wilkinson in late 1990s – captures process of turning data into visuals.</p>
+<p>Graphics have this underlying structure – levels.</p>
 <style type="text/css">
-code.sourceCode {
-  font-size: 0.7em;
-  /* or try font-size: xx-large; */
-}
-</style>
-</div>
-</div>
-</div>
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section class="slide level2">
 
-<h3 id="dplyrs-grammar-of-data-manipulation-2"><code>dplyr</code>’s grammar of data manipulation</h3>
-<div class="columns">
-<div class="column" style="width:50%;">
-<br>
-<div style="font-size:0.7em;">
-<ol type="1">
-<li>Start with a data frame</li>
-<li>Pass some arguments to the function which control what you do to the data frame.<br>
-</li>
-<li>Return the updated data frame.</li>
-</ol>
-</div>
-</div><div class="column" style="width:50%;">
+
+<img data-src="img/gog_demo_redesign.png" style="width:80.0%" class="r-stretch"></section>
+<section id="marks-and-visual-channels" class="slide level2">
+<h2>Marks and visual channels</h2>
 <p><br></p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>ny_trips <span class="sc">|&gt;</span> </span>
-<span id="cb2-2"><a href="#cb2-2"></a>  <span class="fu">group_by</span>(gender)  <span class="sc">|&gt;</span> </span>
-<span id="cb2-3"><a href="#cb2-3"></a>  <span class="fu">summarise</span>(<span class="at">count=</span><span class="fu">n</span>()) <span class="sc">|&gt;</span> </span>
-<span id="cb2-4"><a href="#cb2-4"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(count)) </span>
-<span id="cb2-5"><a href="#cb2-5"></a></span>
-<span id="cb2-6"><a href="#cb2-6"></a><span class="co"># # A tibble: 3 x 2</span></span>
-<span id="cb2-7"><a href="#cb2-7"></a><span class="co">#  gender    count</span></span>
-<span id="cb2-8"><a href="#cb2-8"></a><span class="co">#  &lt;chr&gt;     &lt;int&gt;</span></span>
-<span id="cb2-9"><a href="#cb2-9"></a><span class="co"># 1 male    1044621</span></span>
-<span id="cb2-10"><a href="#cb2-10"></a><span class="co"># 2 female   586361</span></span>
-<span id="cb2-11"><a href="#cb2-11"></a><span class="co"># 3 unknown  251291</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell">
+<blockquote>
+<p>Effective data visualization design is concerned with representing data through <strong>marks</strong> and <strong>visual channels</strong> in a way that best conveys the properties of the data that are to be depicted.</p>
+<p>via Jo Wood</p>
+</blockquote>
+<aside class="notes">
+<p>Marks &gt; geom Channels &gt; aes Tableau and vega-lite Munzner</p>
+<p>Two categories &gt; data type Some more effective than others</p>
 <style type="text/css">
-code.sourceCode {
-  font-size: 0.7em;
-  /* or try font-size: xx-large; */
-}
-</style>
-</div>
-</div>
-</div>
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section class="slide level2">
 
-<h3 id="use-for-a-layered-grammar-of-manipulation">Use <code>%&gt;%</code> for a layered grammar of manipulation</h3>
 <div class="columns">
-<div class="column" style="width:50%;">
-<br>
-<div style="font-size:0.7em;">
-<ol type="1">
-<li>Start with a data frame</li>
-<li>Pass some arguments to the function which control what you do to the data frame.<br>
-</li>
-<li>Return the updated data frame.</li>
-</ol>
-</div>
-</div><div class="column" style="width:50%;">
-<p><br></p>
+<div class="column" style="width:65%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>ny_trips <span class="sc">|&gt;</span>  </span>
-<span id="cb3-2"><a href="#cb3-2"></a>  <span class="fu">filter</span>(gender <span class="sc">!=</span> <span class="st">"unknown"</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb3-3"><a href="#cb3-3"></a>  <span class="fu">group_by</span>(gender) <span class="sc">|&gt;</span> </span>
-<span id="cb3-4"><a href="#cb3-4"></a>  <span class="fu">summarise</span>(<span class="at">count=</span><span class="fu">n</span>()) <span class="sc">|&gt;</span> </span>
-<span id="cb3-5"><a href="#cb3-5"></a>  <span class="fu">mutate</span>(<span class="at">prop=</span>count<span class="sc">/</span><span class="fu">sum</span>(count)) <span class="sc">|&gt;</span> </span>
-<span id="cb3-6"><a href="#cb3-6"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(count)) </span>
-<span id="cb3-7"><a href="#cb3-7"></a></span>
-<span id="cb3-8"><a href="#cb3-8"></a><span class="do">## # A tibble: 2 x 3</span></span>
-<span id="cb3-9"><a href="#cb3-9"></a><span class="do">##  gender   count  prop</span></span>
-<span id="cb3-10"><a href="#cb3-10"></a><span class="do">##  &lt;chr&gt;    &lt;int&gt; &lt;dbl&gt;</span></span>
-<span id="cb3-11"><a href="#cb3-11"></a><span class="do">## 1 male   1044621 0.640</span></span>
-<span id="cb3-12"><a href="#cb3-12"></a><span class="do">## 2 female  586361 0.360</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img data-src="img/wp_spoke.png" style="width:100.0%"></p>
 </div>
+</div>
+</div><div class="column" style="width:35%;">
 <div class="cell">
+<div class="cell-output-display">
+<p><img data-src="img/wp_long.png" style="width:100.0%"></p>
+</div>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>We can use this to evaluate designs on their encoding effectiveness Table 2 of notes Also mention symbolisation</p>
 <style type="text/css">
-code.sourceCode {
-  font-size: 0.7em;
-  /* or try font-size: xx-large; */
-}
-</style>
-</div>
-</div>
-</div>
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="technical-element" class="slide level2">
-<h2>Technical element</h2>
+<section id="checking-perceptual-rankings-preattentive-processing" class="slide level2">
+<h2>Checking perceptual rankings: preattentive processing</h2>
+</section>
+<section class="slide level2">
 
-<img src="https://pbs.twimg.com/profile_images/669108732266217472/nDMLknup_400x400.jpg" class="slide-logo r-stretch"><div class="footer footer-default">
+<div class="callout callout-tip no-icon callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<p><strong>Task: count number of occurrences of #3</strong></p>
+</div>
+<div class="callout-content">
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/no-encoding.png" width="1200"></p>
+<p></p><figcaption>Encoding: <em>none</em>.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><img src="https://pbs.twimg.com/profile_images/669108732266217472/nDMLknup_400x400.jpg" class="slide-logo"></p>
+<div class="footer footer-default">
 <p><strong><a href="https://roger-beecham.com">Roger Beecham</a> //</strong> Essex Summer School <strong>//</strong> August 2023</p>
 </div>
 </section></section>
@@ -1112,19 +576,19 @@ code.sourceCode {
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="session-02_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="session-03_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="session-02_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="session-02_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="session-02_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="session-02_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="session-02_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="session-03_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="session-03_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="session-03_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="session-03_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="session-03_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="session-02_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="session-02_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="session-02_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="session-02_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="session-03_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="session-03_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="session-03_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="session-03_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>

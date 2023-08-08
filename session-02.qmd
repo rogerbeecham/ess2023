@@ -26,10 +26,15 @@ library(tidyverse)
 ::: {.notes}
 
 Review objectives --
+
 * vocab important -- determines the operations that we can perform.
+
 * vocab important sds -- new data, work out its structure.
+
 * tidyverse -- end up coming up with analysis templates
+
 * bikedata and citibike -- loading data for the first time; exploring usefulness for cycling research -- show data
+
 * short on conceptual; large on technical
 
 :::
@@ -55,11 +60,17 @@ Review objectives --
 ::: {.notes}
 
 spreadsheet like representations:
+
 *  rows are observations (case/record)
+
 *  columns are variables
-* organising not alwats eady -- Tidy
+
+* organising not always easy -- Tidy
+
 *  Each variable (column) in a data frame is a vector that must be of equal length
+
 * Missing - `NA`
+
 * `list-col`
 :::
 
@@ -175,7 +186,7 @@ include_graphics("img/dist.png", error = FALSE)
 <div style="font-size:0.7em;">
 
 * dataset: Citibike OD trip data
-* variable: `trip_speed` | `user_age_band` | `user_sex` | `trip_distance` 
+* variable: `trip_speed` | `user_age_band` | `user_type` | `trip_distance` 
 * measurement: `ratio` | `ordinal` | `nominal` | `ordinal`
 
 ::: {.fragment}
@@ -194,7 +205,7 @@ include_graphics("img/speeds.png", error = FALSE)
 <div style="font-size:0.7em;">
 
 * dataset: Citibike OD trip data </span> <br>
-* variable: `trip_count` | `hod` | `user_sex` | `day_week`
+* variable: `trip_count` | `hod` | `user_type` | `day_week`
 *  measurement: `ratio` | `interval|cyclic ratio` | `nominal` | `ordinal` 
 </div> 
 
@@ -222,6 +233,8 @@ include_graphics("img/hod_dow.png", error = FALSE)
 :::
 
 
+
+
 ::: {.fragment}
 ```{r}
 #| echo: false
@@ -238,6 +251,18 @@ kbl(drugs,  protect_latex = TRUE, escape=FALSE) |>
  kable_styling(font_size = 24)
 ```
 :::
+
+
+::: {.notes}
+identify the **variables** and their **values**:
+
+1. `person`:  a categorical nominal variable which takes three values: John Smith, Jane Doe, Mary Johnson.
+2. `treatment`: a categorical nominal variable which takes values: a and b.
+3. `result`: a measurement ratio (I think) variable which six recorded values (including the missing value)
+
+Each **observation** is then a test result returned for each combination of `person` and `treatment`.
+:::
+
 
 ---
 
@@ -262,6 +287,7 @@ kbl(drugs,  protect_latex = TRUE, escape=FALSE) |>
 ```
 :::
 
+
 ::: {.notes}
 identify the **variables** and their **values**:
 
@@ -271,6 +297,7 @@ identify the **variables** and their **values**:
 
 Each **observation** is then a test result returned for each combination of `person` and `treatment`.
 :::
+
 
 ---
 
