@@ -49,9 +49,8 @@ Review objectives --
 
 ### Data frame
 
-<br>
 
-::: {.column width="100%"}
+::: {.column width="80%"}
 
 ![](img/data-structure.png){fig-align="left"}
 :::
