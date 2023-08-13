@@ -1,0 +1,137 @@
+---
+title: "3D"
+subtitle: "<span style='font-size:2.35em;'>Computational Methods for Social Data Science</span>"
+author: "<b style='color:#d03231;'><a href='https://roger-beecham.com'>Roger Beecham</a></b> **//** August 2023"
+format: 
+   revealjs:
+     transition: fade
+     theme: theme/slides-theme.scss
+     footer: '**[Roger Beecham](https://roger-beecham.com) //** Essex Summer School **//** August 2023'
+     mainfont: Avenir Book
+     logo: "https://pbs.twimg.com/profile_images/669108732266217472/nDMLknup_400x400.jpg"
+---
+
+
+```{r}
+#| echo: false
+#| eval: true
+#| message: false
+#| warning: false
+library(knitr)
+library(kableExtra)
+library(tidyverse)
+```
+
+
+# Session 6 : Models
+
+---
+
+<br>
+
+::: {.column width="85%"}
+```{r}
+#| out.width: 100%
+#| echo: false
+include_graphics("img/brexit_vote.png", error = FALSE)
+```
+:::
+
+---
+
+
+
+::: {.column width="85%"}
+```{r}
+#| out.width: 100%
+#| echo: false
+include_graphics("img/brexit_stories.png", error = FALSE)
+```
+:::
+
+---
+
+<br>
+
+::: {.column width="85%"}
+```{r}
+#| out.width: 100%
+#| echo: false
+include_graphics("img/brexit_model.png", error = FALSE)
+```
+:::
+
+---
+
+<br>
+
+::: {.column width="95%"}
+```{r}
+#| out.width: 100%
+#| echo: false
+include_graphics("img/map_uniform.png", error = FALSE)
+```
+:::
+
+
+---
+
+<br>
+
+::: {.column width="85%"}
+```{r}
+#| out.width: 100%
+#| echo: false
+include_graphics("img/scatters.png", error = FALSE)
+```
+:::
+
+---
+
+<br>
+
+::: {.column width="65%"}
+```{r}
+#| out.width: 100%
+#| echo: false
+include_graphics("img/pcps.png", error = FALSE)
+```
+:::
+
+---
+
+<br><br>
+
+::: {.column width="85%"}
+```{r}
+#| out.width: 100%
+#| echo: false
+include_graphics("img/outputs.png", error = FALSE)
+```
+:::
+
+---
+
+::: {.column width="90%"}
+```{r}
+#| out.width: 100%
+#| echo: false
+include_graphics("img/lineups_hex_annotate.png", error = FALSE)
+```
+:::
+
+---
+
+<br><br>
+
+::: {.column width="90%"}
+
+```{r}
+#| out.width: 100%
+#| echo: false
+include_graphics("img/outputs_fe.png", error = FALSE)
+```
+
+:::
+
+
