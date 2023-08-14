@@ -90,7 +90,7 @@ include_graphics("img/scatters.png", error = FALSE)
 
 <br>
 
-::: {.column width="65%"}
+::: {.column width="80%"}
 ```{r}
 #| out.width: 100%
 #| echo: false
