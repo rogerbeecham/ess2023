@@ -134,4 +134,17 @@ include_graphics("img/outputs_fe.png", error = FALSE)
 
 :::
 
+---
+
+<br>
+
+::: {.column width="90%"}
+
+```{r}
+#| out.width: 100%
+#| echo: false
+include_graphics("img/lineups_fe.png", error = FALSE)
+```
+
+:::
 
